@@ -26,7 +26,7 @@ const Home = () => {
     useEffect(() => {
         console.log('user effect ran');
         console.log(blogs);
-    });
+    } );
   return (
     <div className="home">
       <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />

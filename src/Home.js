@@ -17,23 +17,23 @@ const Home = () => {
       id: 3,
     },
   ]);
-    
-    const handleDelete = (id) => {
-        const newBlogs = blogs.filter(blog => blog.id !== id);
-        setBlogs(newBlogs);
-    }
 
-    useEffect(() => {
-        console.log('user effect ran');
-        console.log(blogs);
-    } );
+  const [name, setName] = useState("eben");
+
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter((blog) => blog.id !== id);
+    setBlogs(newBlogs);
+  };
+
+  useEffect(() => {
+      console.log("user effect ran");
+      console.log(name)
+  }, [name]);
   return (
     <div className="home">
       <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
-      <BlogList
-        blogs={blogs.filter((blog) => blog.author === "eben")}
-        title="Eben's Blogs" 
-      />
+          <button onClick={() => setName("sister")}>Change name</button>
+          <p>{name }</p>
     </div>
   );
 };

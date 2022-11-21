@@ -3,8 +3,8 @@ import { useState } from 'react';
 const Home = () => {
     const [blogs, setBlogs] = useState([
         { title: 'My new website', body: 'lorem ipsum...', author: 'eben', id: 1 },
-        { title: 'Welcome party!', body: 'lorem ipsum...', author: 'eben', id: 2 },
-        {title: 'Web dev top tips', body: 'lorem ipsum...', author: 'eben', id: 3}
+        { title: 'Welcome party!', body: 'lorem ipsum...', author: 'sister', id: 2 },
+        {title: 'Web dev top tips', body: 'lorem ipsum...', author: 'cee', id: 3}
     ]);
     return ( 
         <div className="home">

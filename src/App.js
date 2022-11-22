@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Home from './Home';
+import { BrowserRouter as Router }
 
 function App() {
   const title = "Welcome to the new blog";
